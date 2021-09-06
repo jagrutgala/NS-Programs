@@ -1,5 +1,5 @@
 /*
-columnar_cipher.java
+columnar_cipher_2.java
 Author: Jagrut Gala
 Date: 29-07-2021
 Practical: 5
@@ -7,8 +7,8 @@ Objective: Demonstrate Columnar Cipher.
 */
 
 import java.io.*;
-public class columnar_cipher {
-    columnar_cipher() {}
+public class columnar_cipher_2 {
+    columnar_cipher_2() {}
 
     String encrypt(String text, int row, int col, int[] choice) {
         int count= 0;
@@ -34,11 +34,14 @@ public class columnar_cipher {
         }
         return cipher_text;
     }
+
+    String decrypt(String text, int rows, int cols, int[] choice) {
+        return text;
+    }
     
     public static void main(String[] args) throws IOException, Exception {
         BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
         columnar_cipher_2 cc= new columnar_cipher_2();
-
         System.out.print("Enter a String: ");
         String text= br.readLine();
         System.out.print("Enter Number of Rows: ");

@@ -1,3 +1,11 @@
+/*
+caesar_cipher.java
+Author: Jagrut Gala
+Date: 01-07-2021
+Practical: 1
+Objective: Demonstrate Caesar Cipher.
+*/
+
 import java.io.*;
 
 class caesar_cipher {
@@ -21,7 +29,7 @@ class caesar_cipher {
         return(cipher_text);
     }
 
-    String decrypt(String str){
+    String decrypt(String str){ // yes
         String plain_text= "";
         str= str.toLowerCase();
         for(int i=0; i< str.length(); i++){

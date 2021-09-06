@@ -1,3 +1,11 @@
+/*
+monoalphabetic_cipher.java
+Author: Jagrut Gala
+Date: 15-07-2021
+Practical: 3
+Objective: Demonstrate Mono Alphabetic Cipher.
+*/
+
 import java.io.*;
 
 public class monoalphabetic_cipher {
@@ -18,7 +26,7 @@ public class monoalphabetic_cipher {
         return(cipher_text);
     }
 
-    String decrypt(String text) {
+    String decrypt(String text) { // yes
         String plain_text= "";
         for (int i = 0; i < text.length(); i++) {
             for (int j = 0; j < cipher_char.length; j++) {
