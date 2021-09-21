@@ -48,8 +48,11 @@ public class des {
     }
 
 
-    public static void main(String[] args) {
-        String text= "jagrut";
+    public static void main(String[] args) throws IOException{
+        BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("***DES Encryption***");
+        System.out.print("Enter Your Text: ");
+        String text= br.readLine();
         System.out.println("Entered String: "+ text);
         try {
             SecretKey key= KeyGenerator.getInstance("DES").generateKey();

@@ -21,7 +21,7 @@ public class columnar_cipher {
                     cipher_matrix[i][j]= text.charAt(count);
                 }
                 count++;
-                System.out.print(cipher_matrix[i][j]);
+                // System.out.print(cipher_matrix[i][j]);
             }
         }
         System.out.println("");
@@ -37,7 +37,7 @@ public class columnar_cipher {
     
     public static void main(String[] args) throws IOException, Exception {
         BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
-        columnar_cipher_2 cc= new columnar_cipher_2();
+        columnar_cipher cc= new columnar_cipher();
 
         System.out.print("Enter a String: ");
         String text= br.readLine();
